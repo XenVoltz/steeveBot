@@ -14,7 +14,7 @@ module.exports = {
         if (message.channel.type === 'dm') return;
         if (!message.guild.me.hasPermission('MANAGE_CHANNELS')) return message.channel.send("This command requires me to have \`MANAGE_CHANNELS\`");
         
-        const newPrefixChannel = message.guild.channels.cache.find(ch => ch.name.startsWith(`prefix-`))
+        const newPrefixChannel = message.guild.channels.cache.find(ch => ch.name.startsWith(`steeve-`))
         const args1 = args[0]
         if (args1 === set.prefix) return message.channel.send("That is already the prefix.")
         const newPrefix = args[0];
