@@ -20,7 +20,7 @@ module.exports = {
         const newPrefix = args[0];
 
             if (!newPrefixChannel) {
-            const defaultChannelName = `prefix-${args1}`
+            const defaultChannelName = `steeve-${args1}`
             const channel = await message.guild.channels.create(defaultChannelName, {
                 type: 'voice',
                 permissionOverwrites: [{
