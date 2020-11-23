@@ -1,0 +1,13 @@
+{
+    "notACommand": "Command not found. Do $help for a list of commands.",
+    "notAnArgument": "The argument provided was not valid.",
+    "commandError": "There was an error executing that command. Please report this on the [official support server](https://discord.gg/QZMBQJZ9ND).",
+    "error": "There was an error executing that command, check console!",
+    "wrongChannel": "This command was executed in the wrong channel!",
+    "mentionSomeone": "You must tag someone!",
+    "noPermission": "You do not have permission to execute that command!",
+    "newTicket": "Hey! How can we help you today?",
+    "addReason": "You must add a reason.",
+    "notKickable": "This user cannot be kicked!",
+    "notBannable": "This user cannot be banned!"
+}

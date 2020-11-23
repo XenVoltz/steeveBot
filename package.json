@@ -1,0 +1,26 @@
+{
+  "name": "steeve",
+  "version": "1.0.0",
+  "main": "./src/steeve.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.4.0",
+    "mc-stats": "^1.0.7",
+    "minecraft-data": "^2.70.0",
+    "minecraft-server-util": "^3.0.4",
+    "mojang-api": "0.0.2",
+    "node-fetch": "^2.6.1",
+    "sequelize": "^6.3.5",
+    "sqlite3": "^5.0.0",
+    "youtube-sr": "^1.0.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  },
+  "keywords": [],
+  "description": ""
+}
