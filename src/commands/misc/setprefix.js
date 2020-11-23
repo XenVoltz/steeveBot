@@ -33,8 +33,8 @@ module.exports = {
             return message.channel.send(`My new prefix is \`${newPrefix}\`.`);
         }
         
-        const channel = await message.guild.channels.cache.find(ch => ch.name.startsWith("prefix-"));
-        await channel.setName(`prefix-${newPrefix}`);
+        const channel = await message.guild.channels.cache.find(ch => ch.name.startsWith("steeve-"));
+        await channel.setName(`steeve-${newPrefix}`);
         message.channel.send(`My new prefix is \`${newPrefix}\`.`);
     }
 }
