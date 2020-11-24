@@ -116,7 +116,7 @@ client.on('message', async message => {
                 })
                 .setTimestamp()
                 .setFooter(config.botName);
-            message.channel.send(embed);
+             return message.channel.send(embed);
         }
     }
 
@@ -163,7 +163,7 @@ client.on('message', async message => {
             })
             .setTimestamp()
             .setFooter(config.botName);
-        message.channel.send(embed);
+        return message.channel.send(embed);
 
     }
 });
