@@ -1,7 +1,7 @@
 const fs = require('fs');
 const Discord = require('discord.js');
 
-const config = require('../config.json');
+const config = require('./../config.json');
 const messages = require('../messages.json');
 // const db = require('quick.db');
 const client = new Discord.Client();
@@ -39,10 +39,6 @@ client.once('ready', () => {
     client.user.setActivity(`Under Development`);
 });
 
-client.on('channelDelete', channel => {
-    if (channel.name.startsWith("prefix-")) { 
-    }
-})
 client.on('guildCreate', async guild => {
     const date = new Date();
     console.log(`${config.botName} has just joined ${guild.name} on ${date}.`);
@@ -74,7 +70,7 @@ client.on('guildDelete', guild => {
 client.on('message', async message => {
     if (message.system || message.channel.type === 'dm') return;
 
-    const newPrefixChannel = message.guild.channels.cache.find(ch => ch.name.startsWith(`prefix-`))
+    const newPrefixChannel = message.guild.channels.cache.find(ch => ch.name.startsWith(`steeve-`))
 
     // Run if there is no prefix channel
     if (!newPrefixChannel) {
@@ -120,7 +116,7 @@ client.on('message', async message => {
                 })
                 .setTimestamp()
                 .setFooter(config.botName);
-            message.channel.send(embed);
+             return message.channel.send(embed);
         }
     }
 
@@ -167,7 +163,7 @@ client.on('message', async message => {
             })
             .setTimestamp()
             .setFooter(config.botName);
-        message.channel.send(embed);
+        return message.channel.send(embed);
 
     }
 });
