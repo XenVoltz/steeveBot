@@ -2,8 +2,6 @@ const MojangAPI = require('mojang-api');
 const Discord = require('discord.js')
 const config = require('./../../config.json');
 const functions = require('./../functions')
-const yt = require('youtube-sr');
-const {default: YouTube} = require('youtube-sr');
 
 module.exports = {
     name: 'test',
