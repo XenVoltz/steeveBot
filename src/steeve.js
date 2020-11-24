@@ -1,8 +1,8 @@
 const fs = require('fs');
 const Discord = require('discord.js');
 
-const config = require('./../config.json');
-const messages = require('../messages.json');
+const config = require(__dirname + '/../config.json');
+const messages = require(__dirname+ '/../messages.json');
 // const db = require('quick.db');
 const client = new Discord.Client();
 
